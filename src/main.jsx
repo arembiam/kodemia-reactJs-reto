@@ -14,19 +14,19 @@ const routes = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/LogIn",
+    path: "/login",
     element: <LogIn />,
   },
   {
-    path: "/NewPost",
+    path: "/newpost",
     element: <NewPost />,
   },
   {
-    path: "/NewUser",
+    path: "/newuser",
     element: <NewUser />,
   },
   {
-    path: "/PostDetail",
+    path: "/postdetail",
     element: <PostDetail />,
   },
 ]);
