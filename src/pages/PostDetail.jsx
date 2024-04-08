@@ -17,6 +17,8 @@ export default function PostDetail() {
             <div>x</div>
           </aside>
         </div>
+        {/* POST CARD ESTO ES UN COMPONENT */}
+        {/* ASIDE DERECHO SOBRE EL AUTOR ESTO ES UN COMPONENT */}
       </body>
 
       {/* FOOTER DE LA PAGINA  */}
