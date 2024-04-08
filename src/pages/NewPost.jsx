@@ -1,6 +1,17 @@
 import { useForm } from "react-hook-form";
 import { FaXmark } from "react-icons/fa6";
 import { PiNutBold } from "react-icons/pi";
+import { LuBold, LuItalic, LuHeading } from "react-icons/lu";
+import {
+  RiLink,
+  RiListOrdered,
+  RiListCheck,
+  RiDoubleQuotesL,
+  RiCodeFill,
+  RiImageFill,
+} from "react-icons/ri";
+import { GoCodeSquare } from "react-icons/go";
+import { HiOutlineBolt } from "react-icons/hi2";
 
 export default function NewPost() {
   const { register, handleSubmit } = useForm();
@@ -69,8 +80,76 @@ export default function NewPost() {
           </div>
 
           {/* BARRA DE FORMATO TEXTO */}
-          <div className="inline-flex bg-slate-100 w-ful gap-2 px-6">
-            <button type="button">x</button>
+          <div className="inline-flex bg-slate-100  text-lg p-4 w-full max-md:justify-center">
+            <button
+              type="button"
+              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md"
+            >
+              <LuBold />
+            </button>
+            <button
+              type="button"
+              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md"
+            >
+              <LuItalic />
+            </button>
+            <button
+              type="button"
+              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md"
+            >
+              <RiLink />
+            </button>
+            <button
+              type="button"
+              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+            >
+              <RiListOrdered />
+            </button>
+            <button
+              type="button"
+              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+            >
+              <RiListCheck />
+            </button>
+
+            <button
+              type="button"
+              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+            >
+              <RiImageFill />
+            </button>
+            <div className="inline-flex max-lg:visible max-md:invisible">
+              <button
+                type="button"
+                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+              >
+                <LuHeading />
+              </button>
+              <button
+                type="button"
+                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+              >
+                <RiDoubleQuotesL />
+              </button>
+              <button
+                type="button"
+                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+              >
+                <RiCodeFill />
+              </button>
+              <button
+                type="button"
+                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+              >
+                <GoCodeSquare />
+              </button>
+              <button
+                type="button"
+                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+              >
+                <HiOutlineBolt />
+              </button>
+            </div>
           </div>
 
           {/* FORMULARIO PT2 */}
