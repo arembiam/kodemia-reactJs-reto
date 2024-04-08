@@ -34,7 +34,7 @@ export default function LogIn() {
                 <span>Remember me</span>
                 <span>Forgot password?</span>
               </div>
-              S<button type="submit">Log in</button>
+              <button type="submit">Log in</button>
             </div>
           </form>
         </div>
