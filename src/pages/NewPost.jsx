@@ -21,29 +21,31 @@ export default function NewPost() {
       {/* TOP PAGINA OPCIONES */}
       <div className="inline-flex flex-wrap py-2 w-96 min-w-0 sm:min-w-full md:min-w-0 lg:min-w-full ">
         <div className="flex-1 items-center gap-3 inline-flex max-lg:visible max-md:invisible">
-          <img
-            src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/original_logo_0DliJcfsTcciZen38gX9.png"
-            alt=""
-            className="h-8 w-auto"
-          />
+          <a href="/">
+            <img
+              src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/original_logo_0DliJcfsTcciZen38gX9.png"
+              alt=""
+              className="h-8 w-auto"
+            />
+          </a>
           <span className="font-semibold">Create Post</span>
         </div>
         <div className="items-center inline-flex ">
           <button
             type="button"
-            className="p-2 rounded-md text-black font-semibold hover:bg-blue-100 bg-opacity-25"
+            className="p-2 rounded-md text-black font-semibold hover:bg-blue-100 bg-opacity-25 hover:text-blue-700"
           >
             Edit
           </button>
           <button
             type="button"
-            className="p-2 rounded-md text-black  hover:bg-blue-100 bg-opacity-25 "
+            className="p-2 rounded-md text-black  hover:bg-blue-100 bg-opacity-25 hover:text-blue-700"
           >
             Preview
           </button>
           <button
             type="button"
-            className="p-2 rounded-md text-black font-semibold hover:bg-blue-100 bg-opacity-25 "
+            className="p-2 rounded-md text-black font-semibold hover:bg-blue-100 bg-opacity-25 hover:text-blue-700 "
           >
             <FaXmark />
           </button>
@@ -83,69 +85,69 @@ export default function NewPost() {
           <div className="inline-flex bg-slate-100  text-lg p-4 w-full max-md:justify-center">
             <button
               type="button"
-              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md"
+              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md hover:text-blue-700"
             >
               <LuBold />
             </button>
             <button
               type="button"
-              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md"
+              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md hover:text-blue-700"
             >
               <LuItalic />
             </button>
             <button
               type="button"
-              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md"
+              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md hover:text-blue-700"
             >
               <RiLink />
             </button>
             <button
               type="button"
-              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md hover:text-blue-700 "
             >
               <RiListOrdered />
             </button>
             <button
               type="button"
-              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md hover:text-blue-700"
             >
               <RiListCheck />
             </button>
 
             <button
               type="button"
-              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+              className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md hover:text-blue-700"
             >
               <RiImageFill />
             </button>
-            <div className="inline-flex max-lg:visible max-md:invisible">
+            <div className="inline-flex max-lg:visible max-md:invisible ">
               <button
                 type="button"
-                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md hover:text-blue-700 "
               >
                 <LuHeading />
               </button>
               <button
                 type="button"
-                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md hover:text-blue-700 "
               >
                 <RiDoubleQuotesL />
               </button>
               <button
                 type="button"
-                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md hover:text-blue-700"
               >
                 <RiCodeFill />
               </button>
               <button
                 type="button"
-                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md hover:text-blue-700"
               >
                 <GoCodeSquare />
               </button>
               <button
                 type="button"
-                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md "
+                className="hover:bg-indigo-100 bg-opacity-25 p-2 rounded-md hover:text-blue-700"
               >
                 <HiOutlineBolt />
               </button>
@@ -175,19 +177,19 @@ export default function NewPost() {
           </button>
           <button
             type="button"
-            className="p-2 rounded-md text-black font-sans text-sm hover:bg-indigo-100 bg-opacity-25 "
+            className="p-2 rounded-md text-black font-sans text-sm hover:bg-indigo-100 bg-opacity-25 hover:text-blue-700 "
           >
             Save draft
           </button>
           <button
             type="button"
-            className="p-2 rounded-md text-black font-sans text-xl hover:bg-indigo-100 bg-opacity-25 "
+            className="p-2 rounded-md text-black font-sans text-xl hover:bg-indigo-100 bg-opacity-25 hover:text-blue-700"
           >
             <PiNutBold />
           </button>
           <button
             type="button"
-            className="p-2 rounded-md text-black font-sans text-sm hover:bg-indigo-100 bg-opacity-25 "
+            className="p-2 rounded-md text-black font-sans text-sm hover:bg-indigo-100 bg-opacity-25 hover:text-blue-700 "
           >
             Revert new changes
           </button>
