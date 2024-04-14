@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AQUÍ VAN DETALLES DE BODY Y MEDIA QUERIES  */
+body {
+  background: white;
+}
