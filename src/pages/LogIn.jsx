@@ -115,10 +115,9 @@ export default function LogIn() {
                 privacy policy
               </a>
               ,{" "}
-              <a href="" className="text-blue-700">
+              <a href="" className="text-blue-700 text-wrap">
                 terms of use
-              </a>
-              <br />
+              </a>{" "}
               and{" "}
               <a href="" className="text-blue-700">
                 code of conduct
