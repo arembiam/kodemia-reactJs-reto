@@ -1,11 +1,13 @@
 import Link from "next/link";
+import NavBar from "@/src/components/NavBar";
 
 export default function Home() {
   return (
     <main className="bg-slate-100 min-h-screen flex-col flex-wrap">
       {/* BARRA DE NAVEGACIÓN */}
+      <NavBar></NavBar>
 
-      <body className="flex grid-cols-3 py-4 px-16">
+      <div className="flex grid-cols-3 py-4 px-16">
         {/* ASIDE IZQUIERDO */}
 
         <sidebar className="bg-transparent max-md:collapse">
@@ -159,7 +161,7 @@ export default function Home() {
             </div>
           </aside>
         </div>
-      </body>
+      </div>
     </main>
   );
 }
