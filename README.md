@@ -23,12 +23,11 @@ npm run dev
 
 ## Herramientas Implementadas
 
-Durante el desarrollo de este proyecto, se utilizaron las siguientes herramientas:
+Durante el desarrollo de este proyecto, se utilizaron las siguientes herramientas y librerías:
 
 - ReactJs
 - Next.Js
 - Node.Js
-- React Hook Form
 - Tailwind CSS
 - React Icons
 
