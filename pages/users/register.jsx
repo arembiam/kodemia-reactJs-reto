@@ -30,7 +30,7 @@ export default function Register() {
       })
 
       .catch((error) => {
-        console.log("An error occurred:", error);
+        console.log("I am error:", error);
       });
   }
 

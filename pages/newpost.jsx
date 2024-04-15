@@ -1,4 +1,7 @@
-import { useForm } from "react-hook-form";
+import { useState } from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
+
 import { FaXmark } from "react-icons/fa6";
 import { PiNutBold } from "react-icons/pi";
 import { LuBold, LuItalic, LuHeading } from "react-icons/lu";
@@ -14,20 +17,46 @@ import { GoCodeSquare } from "react-icons/go";
 import { HiOutlineBolt } from "react-icons/hi2";
 
 export default function NewPost() {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const [title, setTitle] = useState("");
+  const [tags, setTags] = useState("");
+  const [text, setText] = useState("");
+  const [error, setError] = useState("");
+  const router = useRouter();
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    fetch("https://localhost:3000/posts", {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify({
+        title: title,
+        tags: tags,
+        text: text,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        router.replace("/");
+      })
+
+      .catch((error) => {
+        console.log("I am error:", error);
+      });
+  }
+
   return (
     <main className="bg-slate-100 min-h-screen pt-3 px-48 flex-col flex-wrap justify-center items-center">
       {/* TOP PAGINA OPCIONES */}
       <div className="inline-flex flex-wrap py-2 w-96 min-w-0 sm:min-w-full md:min-w-0 lg:min-w-full ">
         <div className="flex-1 items-center gap-3 inline-flex max-lg:visible max-md:invisible">
-          <a href="/">
+          <Link href="/">
             <img
               src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/original_logo_0DliJcfsTcciZen38gX9.png"
               alt=""
               className="h-8 w-auto"
             />
-          </a>
+          </Link>
           <span className="font-semibold">Create Post</span>
         </div>
         <div className="items-center inline-flex ">
@@ -63,20 +92,24 @@ export default function NewPost() {
             >
               Add a cover image
             </button>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form action="/" onSubmit={handleSubmit}>
               <input
                 type="text"
                 placeholder="New post title here..."
                 required
+                name="title"
+                onChange={(event) => setTitle(event.target.value)}
+                value={title}
                 className="font-extrabold text-3xl py-3 placeholder-gray-600 bg-transparent  w-full focus:outline-none "
-                {...register("title")}
               />
               <input
                 type="text"
                 placeholder="Add up to 4 tags..."
                 className="flex text-sm placeholder-gray-500 py-3 bg-transparent  w-full focus:outline-none "
                 required
-                {...register("tags")}
+                name="tags"
+                onChange={(event) => setTags(event.target.value)}
+                value={tags}
               />
             </form>
           </div>
@@ -160,8 +193,10 @@ export default function NewPost() {
               <textarea
                 placeholder="Write your post content here..."
                 required
+                name="text"
+                onChange={(event) => setText(event.target.value)}
+                value={text}
                 className="font-mono placeholder-gray-500 focus:outline-none w-full"
-                {...register("content")}
               />
             </form>
           </div>
