@@ -13,8 +13,9 @@ export default function LogIn() {
   function handleSubmit(event) {
     event.preventDefault();
 
+    // CAMBIAR A BASE DE DATOS FINAL
     fetch("https://dummyjson.com/auth/login", {
-      method: POST,
+      method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         username: username,
@@ -101,44 +102,46 @@ export default function LogIn() {
         </div>
         {/* FORMULARIO CORREO */}
         <div className="flex flex-col w-96 justify-center">
-          <p className="text-left text-sm font-sans font-semibold py-2">
-            Username
-          </p>
-          <input
-            type="text"
-            required
-            class="border border-gray-300 rounded-md w-96 p-1 focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-700"
-            onChange={(event) => setUsername(event.target.value)}
-            value={username}
-          />
-          <p className="text-left text-sm font-sans font-semibold py-2">
-            Password
-          </p>
-          <input
-            type="password"
-            required
-            class="border border-gray-300 rounded-md w-96 p-1 focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-700"
-            onChange={(event) => setPassword(event.target.value)}
-            value={password}
-          />
-          <div className="flex flex-col justify-center">
-            <div className="flex py-2">
-              <span className="font-sans text-sm text-gray-700 w-60">
-                Remember me
-              </span>
-              <span className="font-sans text-sm text-blue-700">
-                Forgot password?
-              </span>
-            </div>
-            {error && <p className="text-red-600">{error}</p>}
-            <button
-              type="submit"
-              className="flex w-96 p-2 justify-center bg-blue-700 rounded-md text-white font-sans font-semibold text-sm
+          <form action="/users/" onSubmit={handleSubmit}>
+            <p className="text-left text-sm font-sans font-semibold py-2">
+              Username
+            </p>
+            <input
+              type="text"
+              required
+              class="border border-gray-300 rounded-md w-96 p-1 focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-700"
+              onChange={(event) => setUsername(event.target.value)}
+              value={username}
+            />
+            <p className="text-left text-sm font-sans font-semibold py-2">
+              Password
+            </p>
+            <input
+              type="password"
+              required
+              class="border border-gray-300 rounded-md w-96 p-1 focus:outline-none focus:border-blue-800 focus:ring-1 focus:ring-blue-700"
+              onChange={(event) => setPassword(event.target.value)}
+              value={password}
+            />
+            <div className="flex flex-col justify-center">
+              <div className="flex py-2">
+                <span className="font-sans text-sm text-gray-700 w-60">
+                  Remember me
+                </span>
+                <span className="font-sans text-sm text-blue-700">
+                  Forgot password?
+                </span>
+              </div>
+              {error && <p className="text-red-600">{error}</p>}
+              <button
+                type="submit"
+                className="flex w-96 p-2 justify-center bg-blue-700 rounded-md text-white font-sans font-semibold text-sm
                 "
-            >
-              Log in
-            </button>
-          </div>
+              >
+                Log in
+              </button>
+            </div>
+          </form>
         </div>
         {/* FOOTER LEGALES */}
         <div className="flex flex-col p-8 ">
