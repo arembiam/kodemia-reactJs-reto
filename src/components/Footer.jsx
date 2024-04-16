@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-export default function FooterPage(props) {
+export default function Footer(props) {
   return (
-    <footer className="bg-gray-200 p-3 fixed bottom-0 w-full justify-center items-center">
+    <footer className="bg-gray-200 p-3 fixed bottom-0 w-full">
       <p className="text-center text-sm">
         <a
           href="/"
