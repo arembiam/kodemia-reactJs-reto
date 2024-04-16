@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer(props) {
   return (
-    <footer className="bg-gray-200 p-3 fixed bottom-0 w-full">
+    <footer className="bg-gray-200 p-3 sticky w-full min-w-0 sm:min-w-full md:min-w-0 lg:min-w-full flex-col items-center">
       <p className="text-center text-sm">
         <a
           href="/"
