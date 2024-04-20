@@ -4,7 +4,7 @@ import FooterPage from "@/src/components/Footer";
 
 export default function Home() {
   return (
-    <main className="bg-slate-100 min-h-screen flex-col flex-wrap pb-96 justify-center">
+    <main className="bg-slate-100 min-h-screen flex-col flex-wrap justify-center">
       {/* BARRA DE NAVEGACIÓN */}
       <NavBar></NavBar>
 
