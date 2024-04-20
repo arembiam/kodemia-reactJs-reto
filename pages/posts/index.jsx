@@ -6,15 +6,12 @@ import { FaRegComment, FaRegBookmark } from "react-icons/fa";
 
 export default function Posts() {
   return (
-    <main className="bg-slate-100 min-h-screen flex-col flex-wrap justify-center items-center ">
+    <main className="bg-slate-100 min-h-screen  justify-center items-center">
       {/* BARRA DE NAVEGACIÓN */}
       <NavBar></NavBar>
-      <div
-        className="flex grid-col-3 gap-10 justify-center min-w-0 sm:min-w-full md:min-w-0 lg:min-w-full pt-6 px-36 pb-96
-      "
-      >
+      <div className="flex flex-col-3 gap-6 px-28 pt-5 pb-96 justify-center">
         {/* ASIDE IZQUIERDO REACCIONES*/}
-        <aside className=" flex flex-col gap-6 max-lg:visible  max-md:invisible ">
+        <aside className=" flex flex-col gap-6 w-20 max-lg:visible  max-md:collapse ">
           <div className=" flex flex-col justify-items-center">
             <span className="text-2xl text-gray-900">
               <TbHeartPlus />
@@ -36,8 +33,7 @@ export default function Posts() {
         </aside>
 
         {/* POST CARD ESTO ES UN COMPONENT */}
-
-        <div className="flex-wrap bg-white rounded-md border border-gray-300">
+        <div className="flex-col flex-wrap w-full bg-white rounded-md border border-gray-300 ">
           {/* IMAGEN TOP DE POST */}
           <div>
             <img
@@ -48,7 +44,7 @@ export default function Posts() {
           </div>
 
           {/* AUTOR DEL POST */}
-          <div className="flex flex-col-2 gap-3 items-center px-6 py-3 ">
+          <div className="w-full inline-flex flex-col-2 gap-3 items-center px-6 py-3 ">
             <div>
               <img
                 src="https://www.nasa.gov/wp-content/uploads/2023/03/pillars_of_creation.jpg"
@@ -65,7 +61,7 @@ export default function Posts() {
             </div>
           </div>
           {/* REACCIONES EMOJIS */}
-          <div className="flex flex-row gap-6 px-6 py-3 ">
+          <div className=" flex-wrap inline-flex gap-6 px-6 py-3 ">
             <div>
               <span className="text-xl">💖</span>
               <span className="text-md">12</span>
@@ -88,10 +84,10 @@ export default function Posts() {
             </div>
           </div>
           {/* AQUÍ EMPIEZA EL POST */}
-          <div className="px-6 py-3 ">
+          <div className="w-full flex-col px-6 py-3 ">
             <h1 className="text-5xl font-extrabold ">Meme Monday</h1>
             {/* TAGS */}
-            <div className="flex flex-row gap-3 py-2">
+            <div className="flex-wrap inline-flex gap-3 py-2">
               <div
                 className="px-1 py-0 delay-75 border border-white rounded-md
                   hover:border hover:border-pink-500 hover:border-opacity-25 hover:bg-pink-200 hover:bg-opacity-25"
@@ -118,7 +114,7 @@ export default function Posts() {
             </div>
 
             {/* CUERPO DE TEXTO */}
-            <div className="py-2">
+            <div className="py-2 flex-wrap">
               <h3 className="text-lg font-bold">Meme Monday!</h3>
               <p className="text-lg">
                 Today's cover image comes from last week's thread. DEV is an
@@ -128,16 +124,16 @@ export default function Posts() {
           </div>
 
           {/* DIVISIÓN MINÚSCULA  */}
-          <div className="border-b border-gray-200"></div>
+          <div className="w-full flex-wrap border-b border-gray-200"></div>
 
           {/* AQUÍ EMPIEZAN LOS COMMENTS */}
-          <div className="flex flex-col px-8 py-3">
+          <div className="w-full flex flex-col px-8 py-3 ">
             {/* HEADER COMMENTS */}
-            <div className="inline-flex py-4">
+            <div className="inline-flex py-4 justify-center">
               <div className="inline-flex justify-end items-center">
                 <h1 className="text-2xl font-bold">Top comments</h1>
               </div>
-              <div className="flex-1"></div>
+              <div className="flex-1 md:flex-0"></div>
               <div className="inline-flex justify-end items-center">
                 <button className="border border-gray-300 rounded-md py-1 px-2 inline-flex hover:bg-gray-100">
                   <span className="text-sm font-semibold text-gray-600">
@@ -169,24 +165,22 @@ export default function Posts() {
         </div>
 
         {/* ASIDE DERECHO SOBRE EL AUTOR ESTO ES UN COMPONENT */}
-        <aside className="flex flex-row w-36">
-          <div className="bg-white rounded-md border border-gray-300 px-6">
-            <div>
-              {/* AUTOR DEL POST */}
-              <div className="flex-row inline-flex">
-                <div>
-                  <img
-                    src="https://www.nasa.gov/wp-content/uploads/2023/03/pillars_of_creation.jpg"
-                    alt=""
-                    className="h-9 w-auto rounded-full"
-                  />
-                </div>
+        <aside className="flex flex-col w-96 justify-between max-lg:visible  max-md:collapse">
+          <div className="bg-white rounded-md border border-gray-300 flex flex-col p-4 ">
+            {/* AUTOR DEL POST */}
+            <div className="flex-row inline-flex gap-2 items-center p-2">
+              <div className="inline-flex">
+                <img
+                  src="https://www.nasa.gov/wp-content/uploads/2023/03/pillars_of_creation.jpg"
+                  alt=""
+                  className="h-10 w-auto rounded-full"
+                />
+              </div>
 
-                <div>
-                  <h4 className="text-gray-950 text-sm font-bold hover:text-blue-700">
-                    Sonia Aguirre
-                  </h4>
-                </div>
+              <div className="inline-flex">
+                <h4 className="text-gray-950 text-sm font-bold hover:text-blue-700">
+                  Sonia Aguirre
+                </h4>
               </div>
             </div>
           </div>
