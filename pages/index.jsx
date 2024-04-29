@@ -163,14 +163,40 @@ export default function Home() {
         </sidebar>
 
         {/* POST FEED */}
-        <div>
+        <div className="w-full justify-center">
+          {/* NAVBAR */}
           <nav>
-            <ul>
-              <li>Relevant</li>
-              <li>Latest</li>
-              <li>Top</li>
+            <ul className="inline-flex gap-6">
+              <li>
+                {" "}
+                <a
+                  href="/"
+                  className="disabled:text-gray-700 rounded-md py-2 px-3 hover:bg-white hover:text-blue-700  active:text-gray-950 font-bold "
+                >
+                  Relevant
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a
+                  href="/"
+                  className="text-gray-700 rounded-md py-2 px-3 hover:bg-white hover:text-blue-700 visited:font-bold"
+                >
+                  Latest
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a
+                  href="/"
+                  className="text-gray-700 rounded-md py-2 px-3 hover:bg-white hover:text-blue-700 visited:font-bold"
+                >
+                  Top{" "}
+                </a>
+              </li>
             </ul>
           </nav>
+          {/* POST CARDS */}
         </div>
         {/* ASIDE DERECHO */}
         <div>
