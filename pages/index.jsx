@@ -23,57 +23,59 @@ export default function Home() {
         <sidebar className="bg-transparent max-md:collapse">
           {/* ICONS 1 */}
           <ul className="py-2">
-            <li className="py-1 gap-2">
+            <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
               <span className="text-lg">🏠 </span>{" "}
-              <span className="text-sm">Home</span>
+              <span className="text-sm ">Home</span>
             </li>
-            <li className="py-1 gap-2">
+            <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
               <span className="text-lg"> 🗃️</span>{" "}
               <span className="text-sm">Reading List</span>
             </li>
-            <li className="py-1 gap-2">
+            <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
               <span className="text-lg"> 🎙️</span>{" "}
               <span className="text-sm">Podcasts</span>
             </li>
-            <li className="py-1 gap-2">
+            <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
               <span className="text-lg"> 📽️</span>{" "}
               <span className="text-sm">Videos</span>
             </li>
-            <li className="py-1 gap-2">
+            <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
               <span className="text-lg"> 🏷️</span>{" "}
               <span className="text-sm">Tags</span>
             </li>
-            <li className="py-1 gap-2">
+            <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
               <span className="text-lg">💡 </span>{" "}
               <span className="text-sm">DEV Help</span>
             </li>
-            <li className="py-1 gap-2">
+            <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
               <span className="text-lg">🛍️ </span>{" "}
               <span className="text-sm">Forem Shop</span>
             </li>
-            <li className="py-1 gap-2">
+            <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
               <span className="text-lg">❤️ </span>{" "}
               <span className="text-sm">Advertise on DEV</span>
             </li>
-            <li className="py-1 gap-2">
+            <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
               <span className="text-lg"> ✨ </span>{" "}
               <span className="text-sm">DEV Showcase </span>
             </li>
-            <li className="py-1 gap-2">
+            <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 items-center">
               <span className="text-xl inline-flex ">
                 <FaDev />
               </span>{" "}
-              <span className="text-sm inline-flex">About</span>
+              <span className="text-sm inline-flex hover:underline hover:text-blue-700">
+                About
+              </span>
             </li>
-            <li className="py-1 gap-2">
+            <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
               <span className="text-lg">📯 </span>{" "}
               <span className="text-sm">Contact</span>
             </li>
-            <li className="py-1 gap-2">
+            <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
               📖 Guides<span className="text-lg"> </span>{" "}
               <span className="text-sm"></span>
             </li>
-            <li className="py-1 gap-2">
+            <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
               {" "}
               🤔Software comparisons<span className="text-lg"> </span>{" "}
               <span className="text-sm"></span>
@@ -83,38 +85,38 @@ export default function Home() {
           <div className="py-2">
             <p className="text-md font-bold">Other</p>
             <ul>
-              <li className="py-1 gap-2">
+              <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
                 <span className="text-lg">👍</span>{" "}
                 <span className="text-sm">Code of Conduct</span>
               </li>
-              <li className="py-1 gap-2">
+              <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
                 <span className="text-lg">🤓</span>{" "}
                 <span className="text-sm">Privacy Policy</span>{" "}
               </li>
-              <li className="py-1 gap-2">
+              <li className="p-1 gap-2 rounded-md hover:border hover:bg-indigo-700 hover:bg-opacity-10 hover:underline hover:text-blue-700">
                 <span className="text-lg">👀</span>{" "}
                 <span className="text-sm">Terms of use</span>
               </li>
             </ul>
           </div>
           {/* SOCIAL MEDIA*/}
-          <div className="inline-flex py-4 gap-3">
-            <span className="text-2xl text-gray-700">
+          <div className="inline-flex py-4 gap-2">
+            <span className=" rounded-md p-1 text-xl text-gray-700 hover:bg-indigo-700 hover:bg-opacity-15 hover:text-blue-800">
               <FaTwitter />
             </span>
-            <span className="text-2xl text-gray-700">
+            <span className=" rounded-md p-1 text-xl text-gray-700 hover:bg-indigo-700 hover:bg-opacity-15 hover:text-blue-800">
               <FaFacebookSquare />
             </span>
-            <span className="text-2xl text-gray-700">
+            <span className=" rounded-md p-1 text-xl text-gray-700 hover:bg-indigo-700 hover:bg-opacity-15 hover:text-blue-800">
               <FaGithub />
             </span>
-            <span className="text-2xl text-gray-700">
+            <span className=" rounded-md p-1 text-xl text-gray-700 hover:bg-indigo-700 hover:bg-opacity-15 hover:text-blue-800">
               <BiLogoInstagramAlt />
             </span>
-            <span className="text-2xl text-gray-700">
+            <span className=" rounded-md p-1 text-xl text-gray-700 hover:bg-indigo-700 hover:bg-opacity-15 hover:text-blue-800">
               <FaTwitch />
             </span>
-            <span className="text-2xl text-gray-700">
+            <span className=" rounded-md p-1 text-xl text-gray-700 hover:bg-indigo-700 hover:bg-opacity-15 hover:text-blue-800">
               <FaMastodon />
             </span>
           </div>
