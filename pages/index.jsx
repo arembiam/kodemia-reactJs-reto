@@ -200,86 +200,148 @@ export default function Home() {
         </div>
         {/* ASIDE DERECHO */}
         <div>
-          <aside>
-            <div>
-              <h3>Active discussions</h3>
-              <div>
-                <Link href="">What Junior Devs Get Wrong</Link>
-                <p>47 comments</p>
+          <aside className=" grid gap-y-4">
+            {/* Active */}
+            <div className="rounded-md bg-white  border border-gray-200">
+              <h3 className="text-lg font-bold p-3">Active discussions</h3>
+              <div className="py-2 px-3 border-b border-t border-gray-200">
+                <Link
+                  href=""
+                  className="text-sm text-gray-800 hover:text-blue-700"
+                >
+                  What Junior Devs Get Wrong
+                </Link>
+                <p className="text-xs text-gray-500">47 comments</p>
               </div>
-              <div>
-                <Link href="">What Are Your Best Clean Code Tips?</Link>
-                <p>16 comments</p>
+              <div className="py-2 px-3 border-b border-gray-200">
+                <Link
+                  href=""
+                  className="text-sm text-gray-800 hover:text-blue-700"
+                >
+                  What Are Your Best Clean Code Tips?
+                </Link>
+                <p className="text-xs text-gray-500">16 comments</p>
               </div>
-              <div>
-                <Link href="">Welcome Thread - v270</Link>
-                <p>134 comments</p>
+              <div className="py-2 px-3 border-b border-gray-200">
+                <Link
+                  href=""
+                  className="text-sm text-gray-800 hover:text-blue-700"
+                >
+                  Welcome Thread - v270
+                </Link>
+                <p className="text-xs text-gray-500">134 comments</p>
               </div>
-              <div>
-                <Link href="">
+              <div className="py-2 px-3 border-b border-gray-200">
+                <Link
+                  href=""
+                  className="text-sm text-gray-800 hover:text-blue-700"
+                >
                   8 BEST Sites to Practice Coding by Exercises 🏋️‍♂️🎯
                 </Link>
-                <p>7 comments</p>
+                <p className="text-xs text-gray-500">7 comments</p>
               </div>
-              <div>
-                <Link href="">
+              <div className="py-2 px-3 border-b border-gray-200">
+                <Link
+                  href=""
+                  className="text-sm text-gray-800 hover:text-blue-700"
+                >
                   5 Developer Communities You Must Join in 2024
                 </Link>
-                <p>7 comments</p>
+                <p className="text-xs text-gray-500">7 comments</p>
               </div>
             </div>
-            <div>
-              <div>
-                <h3>#discuss</h3>
-                <p>Discussion threads targeting the whole community</p>
+
+            {/* discuss */}
+            <div className="rounded-md bg-white  border border-gray-200">
+              <div className="p-3 border-b border-gray-200">
+                <h3 className="text-lg font-bold text-gray-700">#discuss</h3>
+                <p className="text-xs text-gray-600">
+                  Discussion threads targeting the whole community
+                </p>
               </div>
-              <div>
-                <Link href="">
+              <div className="p-3 border-b border-gray-200">
+                <Link
+                  href=""
+                  className="text-sm text-gray-800 hover:text-blue-700"
+                >
                   What are you learning about this weekend? 🧠
                 </Link>
-                <p>25 comments</p>
+                <p className="text-xs text-gray-500">25 comments</p>
               </div>
-              <div>
-                <Link href="">What Are Your Best Clean Code Tips?</Link>
-                <p>16 comments</p>
+              <div className="p-3 border-b border-gray-200">
+                <Link
+                  href=""
+                  className="text-sm text-gray-800 hover:text-blue-700"
+                >
+                  What Are Your Best Clean Code Tips?
+                </Link>
+                <p className="text-xs text-gray-500">16 comments</p>
               </div>
-              <div>
-                <Link href="">
+              <div className="p-3 border-b border-gray-200">
+                <Link
+                  href=""
+                  className="text-sm text-gray-800 hover:text-blue-700"
+                >
                   Brewing Bytes:Exploring Programming and Low Code Development
                 </Link>
-                <p>New</p>
+                <p className="text-xs text-gray-500">11 comments</p>
               </div>
-              <div>
-                <Link href="">My New Podcast: AI With Alex</Link>
-                <p>New</p>
+              <div className="p-3 border-b border-gray-200">
+                <Link
+                  href=""
+                  className="text-sm text-gray-800 hover:text-blue-700"
+                >
+                  My New Podcast: AI With Alex
+                </Link>
+                <p className="text-xs text-gray-500">11 comments</p>
               </div>
-              <div>
-                <Link href="">
+              <div className="p-3 border-b border-gray-200">
+                <Link
+                  href=""
+                  className="text-sm text-gray-800 hover:text-blue-700"
+                >
                   How do you deal with digital eye strain and dry eyes?
                 </Link>
-                <p>11 comments</p>
+                <p className="text-xs text-gray-500">11 comments</p>
               </div>
             </div>
-            <div>
-              <div>
-                <h3>#watercooler</h3>
-                <p>Light, and off-topic conversation.</p>
+
+            {/* watercooler */}
+            <div className="rounded-md bg-white  border border-gray-200">
+              <div className="p-3 border-b border-gray-200">
+                <h3 className="text-lg font-bold text-gray-700">
+                  #watercooler
+                </h3>
+                <p className="text-xs text-gray-600">
+                  Light, and off-topic conversation.
+                </p>
               </div>
-              <div>
-                <Link href="">Caption This! 🤔💭</Link>
-                <p>11 comments</p>
+              <div className="p-3 border-b border-gray-200">
+                <Link
+                  href=""
+                  className="text-sm text-gray-800 hover:text-blue-700"
+                >
+                  Caption This! 🤔💭
+                </Link>
+                <p className="text-xs text-gray-500">11 comments</p>
               </div>
-              <div>
-                <Link href="">
+              <div className="p-3 border-b border-gray-200">
+                <Link
+                  href=""
+                  className="text-sm text-gray-800 hover:text-blue-700"
+                >
                   Quntis Dynamic RGB LED Monitor Lamp Tech Review
                 </Link>
-                <p>New</p>
+                <p className="text-xs text-gray-500">13 comments</p>
               </div>
-              <div>
-                <Link href="">
+              <div className="p-3 border-b border-gray-200">
+                <Link
+                  href=""
+                  className="text-sm text-gray-800 hover:text-blue-700"
+                >
                   Quntis Remote Control Dual Source Light Bar Tech Review
                 </Link>
-                <p>New</p>
+                <p className="text-xs text-gray-500">11 comments</p>
               </div>
             </div>
           </aside>
