@@ -1,6 +1,7 @@
 import Link from "next/link";
 import NavBar from "@/src/components/NavBar";
 import FooterPage from "@/src/components/Footer";
+import PostCard from "@/src/components/PostCard";
 import {
   FaDev,
   FaTwitter,
@@ -17,7 +18,7 @@ export default function Home() {
       {/* BARRA DE NAVEGACIÓN */}
       <NavBar></NavBar>
 
-      <div className="flex grid-cols-3 py-4 px-16">
+      <div className="flex grid-cols-3  gap-x-4 py-4 px-16">
         {/* ASIDE IZQUIERDO */}
 
         <sidebar className="bg-transparent max-md:collapse">
@@ -199,7 +200,9 @@ export default function Home() {
             </ul>
           </nav>
           {/* POST CARDS */}
+          <PostCard />
         </div>
+
         {/* ASIDE DERECHO */}
         <div>
           <aside className=" grid gap-y-4">
